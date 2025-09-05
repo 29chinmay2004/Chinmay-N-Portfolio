@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chinmay N | Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- AOS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Scroll progress -->
+  <div id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Chinmay<span>N</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero-section">
+    <div id="particles-js"></div>
+    <div class="hero-content container">
+      <div class="hero-text" data-aos="fade-up">
+        <p class="intro">Hello, I’m</p>
+        <h1>Chinmay<span></span></h1>
+        <h3 class="typewriter">A Passionate Developer & Engineer</h3>
+        <p class="desc">I craft clean interfaces and data-driven apps that solve real problems.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="hero-btn">🚀 View My Work</a>
+          <a href="Chinmay N Resume.pdf" class="hero-btn outline" target="_blank" rel="noopener">Download Resume</a>
+
+        </div>
+      </div>
+      <div class="hero-image" data-aos="zoom-in" data-aos-delay="150">
+        <img src="Chinamay_N.jpg" alt="Chinmay">
+      </div>
+    </div>
+  </section>
+
+  <!-- About (centered) -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <div class="about-card glass" data-aos="fade-up" data-aos-delay="120">
+        <div class="about-avatar">
+          <!-- Optional profile image: <img src="images/profile.jpg" alt="Harsha HR"> -->
+          <div class="avatar-fallback">H</div>
+        </div>
+        <div class="about-text">
+          <h3>Hello! I’m <span>Chinamy</span></h3>
+          <p>
+            I’m a 7th-semester Information Science student at National Institute of Technology (VTU) who enjoys
+            turning ideas into usable products. I work across the web stack and love connecting software
+            with the physical world through IoT.
+          </p>
+          
+          <div class="about-cta">
+            <a href="Chinmay N Resume.pdf" class="btn" target="_blank" rel="noopener">Download Resume</a>
+
+            <a href="#contact" class="btn secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-list" data-aos="fade-up" data-aos-delay="200">
+        <span class="skill-icon"><i class="fa-brands fa-html5"></i> HTML</span>
+        <span class="skill-icon"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+        <span class="skill-icon"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <span class="skill-icon"><i class="fa-solid fa-database"></i> SQL</span>
+        <span class="skill-icon"><i class="fa-solid fa-code"></i> C++ (Basics)</span>
+        <span class="skill-icon"><i class="fa-brands fa-python"></i> Python (Basics)</span>
+        <span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt=""> Figma</span>
+        <span class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt=""> Canva</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+
+    <div class="filter-buttons" data-aos="fade-up" data-aos-delay="120">
+      <button class="filter-btn active" onclick="filterProjects('all', event)">All</button>
+>
+
+      <button class="filter-btn" onclick="filterProjects('ml', event)">Machine Learning</button>
+      <button class="filter-btn" onclick="filterProjects('mobile', event)">Mobile Apps</button>
+      <button class="filter-btn" onclick="filterProjects('security', event)">Security</button>
+    </div>
+
+    <div class="projects-grid">
+
+
+      <!-- ✅ New Projects -->
+      <div class="project-card glass mobile" data-aos="fade-up" data-aos-delay="300" onclick="openModal('project4')">
+        <h3>School Management System</h3>
+        <p><strong>Tech:</strong> Kotlin, XML, MongoDB</p>
+      </div>
+
+      <div class="project-card glass mobile" data-aos="fade-up" data-aos-delay="400" onclick="openModal('project5')">
+        <h3>Women Safety Application</h3>
+        <p><strong>Tech:</strong> Android, Location APIs</p>
+      </div>
+
+      <div class="project-card glass security" data-aos="fade-up" data-aos-delay="500" onclick="openModal('project6')">
+        <h3>Secure File Sharing System</h3>
+        <p><strong>Tech:</strong> RSA, AES, RBAC</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ New Project Modals -->
+<div id="project4" class="modal">
+  <div class="modal-content glass">
+    <span class="close" onclick="closeModal('project1')">&times;</span>
+    <h3>School Management System</h3>
+    <p><strong>Tech:</strong> Kotlin, XML, MongoDB</p>
+    <p><strong>Description:</strong> Designed and developed a mobile app with MongoDB for efficient data storage and retrieval, providing a user-friendly interface for administrators, teachers, and students.</p>
+  </div>
+</div>
+
+<div id="project5" class="modal">
+  <div class="modal-content glass">
+    <span class="close" onclick="closeModal('project2')">&times;</span>
+    <h3>Women Safety Application</h3>
+    <p><strong>Tech:</strong> Android, Location APIs</p>
+    <p><strong>Description:</strong> Built an intelligent safety platform with instant SOS triggers, live location sharing, real-time alerts, and trusted contact management for emergency response.</p>
+  </div>
+</div>
+
+<div id="project6" class="modal">
+  <div class="modal-content glass">
+    <span class="close" onclick="closeModal('project3')">&times;</span>
+    <h3>Secure File Sharing System</h3>
+    <p><strong>Tech:</strong> RSA, AES, RBAC</p>
+    <p><strong>Description:</strong> Developed RBAC with granular admin privileges, implemented RSA & AES encryption with session key management, and strong authentication for secure file and directory access.</p>
+  </div>
+</div>
+
+
+
+
+<!-- Certifications -->
+<section id="certifications" class="certifications">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+
+    <div class="cert-row" data-aos="fade-up" data-aos-delay="100">
+      <!-- Cert 1 -->
+      <div class="cert-card glass" onclick="openCertModal('cert1')">
+        <h3>Interface</h3>
+        <small>Christ University</small>
+      </div>
+
+      <!-- Cert 2 -->
+      <div class="cert-card glass" onclick="openCertModal('cert2')">
+        <h3>Cyber Crime Intervention Officer</h3>
+        <small>ISAC Certified (CCIO)</small>
+      </div>
+
+      <!-- Cert 3 -->
+      <div class="cert-card glass" onclick="openCertModal('cert3')">
+        <h3>Campus Ambassador</h3>
+        <small>Rinex Technology</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Certification Modals -->
+<div id="cert1" class="cert-modal">
+  <span class="close" onclick="closeCertModal('cert1')">&times;</span>
+  <img src="assets/cert1.jpg" alt="Interface - Christ University Certificate">
+</div>
+
+<div id="cert2" class="cert-modal">
+  <span class="close" onclick="closeCertModal('cert2')">&times;</span>
+  <img src="assets/cert2.jpg" alt="ISAC CCIO Certificate">
+</div>
+
+<div id="cert3" class="cert-modal">
+  <span class="close" onclick="closeCertModal('cert3')">&times;</span>
+  <img src="assets/cert3.jpg" alt="Rinex Campus Ambassador Certificate">
+</div>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">📬 Get in Touch</h2>
+      <div class="contact-container glass" data-aos="fade-up" data-aos-delay="120">
+        <div class="contact-info">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Mysuru,Karnataka,India</p>
+          <p><i class="fas fa-envelope"></i>chinuchinmay.n7@gmail.com</p>
+          <p><i class="fas fa-phone"></i>+91 6361525604</p>
+          <div class="social-icons">
+            <a href="https://github.com/29chinmay2004?utm_source=chatgpt.com" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/chinmay-n-675678253?utm_source=chatgpt.com" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:chinuchinmay.n7@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="wave-bg">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path d="M0.00,49.98 C150.00,150.00 349.15,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Made with ❤️ by Chinmay</p>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+</html>
